@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Postavke korisničkog računa | ScenarijPro</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/user.css">
+</head>
+<body>
+  <main class="settings">
+    <h1>Postavke korisničkog računa</h1>
+    <p class="subtitle">Upravljajte vašim korisničkim računom, sigurnosnim postavkama i notifikacijama</p>
+
+    <form action="#">
+      <section class="section section--account">
+        <h2>Podaci o korisničkom računu</h2>
+        <div class="field">
+          <label class="label" for="name">Ime i prezime</label>
+          <input class="input" id="name" type="text" placeholder="Alex Writer" autocomplete="name">
+        </div>
+        <div class="field">
+          <label class="label" for="email">Email adresa</label>
+          <input class="input" id="email" type="email" placeholder="alex.writer@example.com" autocomplete="email">
+        </div>
+        <div class="field">
+          <label class="label" for="items">Broj elemenata po stranici</label>
+          <input class="input" id="items" type="number" min="1" max="100" step="1" value="25" placeholder="1 – 100">
+        </div>
+      </section>
+
+      <section class="section section--security">
+        <h2>Sigurnosne postavke</h2>
+        <div class="field">
+          <label class="label" for="password">Nova šifra</label>
+          <input class="input" id="password" type="password" placeholder="Unesite novu šifru" autocomplete="new-password">
+        </div>
+        <div class="field field--check">
+          <label class="check"><input type="checkbox" name="twofa"> Omogući Two-Factor Authentication (2FA)</label>
+        </div>
+      </section>
+
+      <section class="section section--notify">
+        <h2>Notifikacije</h2>
+        <div class="field" role="radiogroup" aria-labelledby="contact-label">
+          <span class="label" id="contact-label">Preferirani način komunikacije</span>
+          <div class="choices">
+            <label><input type="radio" name="contact" value="email" checked> Email</label>
+            <label><input type="radio" name="contact" value="sms"> SMS</label>
+            <label><input type="radio" name="contact" value="none"> None</label>
+          </div>
+        </div>
+        <div class="field">
+          <label class="label" for="frequency">Notification frequency</label>
+          <select class="input" id="frequency" name="frequency">
+            <option value="daily" selected>Daily</option>
+            <option value="weekly">Weekly</option>
+            <option value="monthly">Monthly</option>
+            <option value="never">Never</option>
+          </select>
+        </div>
+      </section>
+
+      <div class="form-footer">
+        <button class="btn-save" type="button">Spasi promjene</button>
+      </div>
+    </form>
+  </main>
+</body>
+</html>

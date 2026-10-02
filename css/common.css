@@ -1,0 +1,21 @@
+/* Zajednički stilovi: design tokeni, reset i osnovni elementi */
+:root {
+  --primary: #5B3FFF;
+  --primary-dark: #4629e6;
+  --primary-tint: #E9EEFF;
+  --text: #1f2233;
+  --muted: #8a8f9c;
+  --bg: #f5f6fa;
+  --surface: #fff;
+  --border: #e5e7ef;
+  --radius: 12px;
+  --shadow-hover: 0 2px 8px rgba(0, 0, 0, 0.05);
+  font-family: "Poppins", "Inter", sans-serif;
+}
+*, *::before, *::after { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); line-height: 1.5; }
+button, input, select { font: inherit; }
+button { cursor: pointer; }
+:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }
+.icon { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; flex: none; }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }

@@ -1,0 +1,28 @@
+body { display: grid; place-items: center; min-height: 100vh; padding: 24px; }
+.settings { width: 100%; max-width: 840px; padding: 32px; background: var(--surface); border-radius: 16px; box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06); }
+.settings h1 { margin: 0; padding-bottom: 8px; border-bottom: 2px solid var(--primary); text-align: center; font-size: 1.75rem; }
+.subtitle { margin: 12px 0 24px; text-align: center; font-style: italic; color: var(--muted); font-size: 0.9rem; }
+
+/* Sekcije: svaka ima svoj ton preko varijabli */
+.section { margin-bottom: 24px; padding: 20px; border-radius: 10px; background: var(--tint); }
+.section--account { --tone: #4b4fd6; --tint: #eef1ff; }
+.section--security { --tone: #d33a3a; --tint: #fff0f0; }
+.section--notify { --tone: #12a89a; --tint: #eefcf8; }
+.section h2 { margin: 0 0 16px; font-size: 1rem; color: var(--tone); }
+.field { display: grid; grid-template-columns: 220px 1fr; align-items: center; gap: 8px 16px; margin-bottom: 16px; }
+.field:last-child { margin-bottom: 0; }
+.label { font-size: 0.85rem; font-weight: 500; }
+.input { width: 100%; padding: 10px 12px; border: 1px solid var(--tone); border-radius: 8px; background: #fff; }
+.choices { display: flex; flex-wrap: wrap; gap: 16px; font-size: 0.85rem; }
+.choices label, .check { display: flex; align-items: center; gap: 6px; }
+.field--check .check { grid-column: 2; font-size: 0.85rem; }
+
+.form-footer { margin-top: 8px; padding-top: 24px; border-top: 1px solid var(--border); }
+.btn-save { width: 100%; padding: 12px; border: 0; border-radius: 8px; background: var(--primary); color: #fff; font-weight: 600; transition: background-color 0.2s; }
+.btn-save:hover { background: var(--primary-dark); }
+
+@media (max-width: 749px) {
+  .settings { padding: 20px; }
+  .field { grid-template-columns: 1fr; }
+  .field--check .check { grid-column: auto; }
+}

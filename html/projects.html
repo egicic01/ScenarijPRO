@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projekat | ScenarijPro</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/project.css">
+</head>
+<body>
+    <div class="layout">
+        <aside class="sidebar">
+            <p class="brand">ScenarijPro</p>
+            <nav class="nav" aria-label="Glavna navigacija">
+                <ul>
+                    <li><a href="projects.html" aria-current="page"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h7l2 2h9v11H3z"/></svg>Projekti</a></li>
+                    <li><a href="#"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4v16h16M8 14l4-4 3 3 5-6"/></svg>Statistika</a></li>
+                     <li><a href="user.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M5 19l2-2M17 7l2-2"/></svg>Postavke</a></li>
+                </ul>
+            </nav>
+            <hr>
+            <div class="profile">
+                <span class="avatar" aria-hidden="true">U</span>
+                <div>
+                    <p class="profile-name">Alex Writer</p>
+                    <p class="profile-role">Pro member</p>
+                </div>
+            </div>
+        </aside>
+
+        <main class="content">
+            <header class="header">
+                <h1>Svi scenariji</h1>
+                <div class="actions">
+                    <input class="search" type="search" placeholder="Pretraga" aria-label="Pretraga scenarija">
+                    <button class="btn-primary" type="button">+ Novi projekat</button>
+                </div>
+            </header>
+
+            <section class="grid" aria-label="Lista scenarija">
+              <article class="card card--active">
+                 <div class="card-head">
+                     <h2><a href="writing.html">The Last Starship</a></h2>
+                     <span class="badge">Aktivan</span>
+                 </div>
+                <p class="card-desc">Sci-Fi igrani film</p>
+                <div class="card-meta">
+                  <p><strong>Status:</strong> Druga verzija</p>
+                  <p><strong>Broj stranica:</strong> 105</p>
+                  <p><strong>Vrijeme posljednje izmjene:</strong> prije 2 sata</p>
+                </div>
+              </article>
+
+        <article class="card">
+          <h2><a href="writing.html">Grad zvan Tišina</a></h2>
+          <p class="card-desc">Misterija, TV pilot (45 min)</p>
+          <div class="card-meta">
+            <p><strong>Status:</strong> Outline završen</p>
+            <p><strong>Broj stranica:</strong> 12</p>
+            <p><strong>Vrijeme posljednje izmjene:</strong> jučer</p>
+          </div>
+        </article>
+        
+        <article class="card">
+          <h2><a href="writing.html">Arhitektova tajna</a></h2>
+          <p class="card-desc">Triler, kratki film</p>
+          <div class="card-meta">
+            <p><strong>Status:</strong> Finalna verzija</p>
+            <p><strong>Broj stranica:</strong> 28</p>
+            <p><strong>Vrijeme posljednje izmjene:</strong> prije 3 sedmice</p>
+          </div>
+        </article>
+
+        <a class="card card--new" href="#">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+          <span>Kreiraj novi scenarij</span>
+        </a>
+      </section>
+        </main>
+    </div>
+</body>
+</html>
