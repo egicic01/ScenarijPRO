@@ -37,3 +37,11 @@ body { display: flex; flex-direction: column; min-height: 100vh; }
   .editor { padding: 16px; }
   .page { padding: 32px 24px; }
 }
+
+/* Spirala 2: analiza teksta */
+.analysis { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; max-width: 840px; margin: 0 auto 16px; }
+.analysis input { padding: 6px 12px; border: 1px solid var(--border); border-radius: 8px; background: #fff; font-size: 0.8rem; }
+#poruke { flex: 1 0 100%; padding: 12px 16px; border: 1px solid var(--border); border-radius: 8px; background: #fff; font-size: 0.85rem; white-space: pre-wrap; max-height: 260px; overflow: auto; }
+#poruke:empty { display: none; }
+.page:focus { outline: none; }
+.page:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }

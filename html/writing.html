@@ -34,14 +34,34 @@
     </aside>
 
     <main class="editor">
-      <article class="page">
-        <p class="scene-heading">EXT. LUNAR SURFACE – DAY</p>
-        <p class="action">The vast, grey SILENCE of the moon. Dust motes hang impossibly still in the weak light. CAPTAIN KIRA (40s, sharp, tired) walks toward a ruined DOME, her footsteps crunching.</p>
-        <p class="action">She stops. Something glints beneath the collapsed airlock.</p>
+      <section class="analysis" aria-label="Analiza i formatiranje teksta">
+        <button class="tool" type="button" data-akcija="rijeci">Broj riječi</button>
+        <button class="tool" type="button" data-akcija="uloge">Uloge</button>
+        <button class="tool" type="button" data-akcija="pogresne">Pogrešne uloge</button>
+        <button class="tool" type="button" data-akcija="grupe">Grupe uloga</button>
+        <input id="ulogaInput" type="text" placeholder="Ime uloge (npr. KIRA)" aria-label="Ime uloge">
+        <button class="tool" type="button" data-akcija="linije">Broj linija</button>
+        <button class="tool" type="button" data-akcija="scenarij">Scenarij uloge</button>
+        <button class="tool tool--format" type="button" data-format="bold"><b>Bold</b></button>
+        <button class="tool tool--format" type="button" data-format="italic"><i>Italic</i></button>
+        <button class="tool tool--format" type="button" data-format="underline"><u>Underline</u></button>
+        <div id="poruke" role="status" aria-live="polite"></div>
+      </section>
+
+      <div class="page" id="divEditor" contenteditable="true" spellcheck="false">
         <p class="scene-heading">INT. STARSHIP BRIDGE – NIGHT</p>
-        <p class="action">Red emergency lights pulse across empty consoles. A single screen flickers to life.</p>
-      </article>
+        <p>Red emergency lights pulse across empty consoles. A single screen flickers to life.</p>
+        <p>KIRA<br>Report.</p>
+        <p>ENGINEER<br>The reactor is failing. We have <b>minutes</b>.</p>
+        <p>KIRA<br>(quietly)<br>Then we use them <i>well</i>.</p>
+        <p class="scene-heading">EXT. LUNAR SURFACE – DAY</p>
+        <p>The vast, grey SILENCE of the moon. CAPTAIN KIRA walks toward a ruined dome.</p>
+        <p>KIRA<br>Base, do you copy?</p>
+      </div>
     </main>
   </div>
+
+  <script src="../js/EditorTeksta.js"></script>
+  <script src="../js/editor.js"></script>
 </body>
 </html>
