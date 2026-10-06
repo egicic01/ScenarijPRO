@@ -1,0 +1,27 @@
+{
+  "name": "scenarijpro",
+  "version": "1.0.0",
+  "description": "**Web aplikacija za kolaborativno pisanje scenarija.** Urednik u klasičnom scenarističkom formatu, analiza uloga i dijaloga, istovremeni rad više korisnika uz zaključavanje linija i historija verzija s mogućnošću vraćanja na bilo koji checkpoint.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/egicic01/ScenarijPRO.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/egicic01/ScenarijPRO/issues"
+  },
+  "homepage": "https://github.com/egicic01/ScenarijPRO#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
